@@ -19,7 +19,8 @@ a {
     color: unset;
 }
 
-h1,p{
+h1,
+p {
     margin: 0;
 }
 
@@ -30,7 +31,7 @@ h1,p{
 }
 
 
-    .devider{
+.devider {
     max-width: 420px;
     height: 1px;
     width: 100%;
