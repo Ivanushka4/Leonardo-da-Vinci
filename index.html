@@ -16,35 +16,67 @@
             <nav class="nav" aria-label="header navigation">
                 <ul class="nav-list" aria-label="header navigation list">
                     <li>
-                        <a href="#" class="nav-link" aria-label="link to home">Home</a>
+                        <a href="#home-id" class="nav-link" aria-label="link to home">Home</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link" aria-label="link to about">About</a>
+                        <a href="#about-id" class="nav-link" aria-label="link to about">About</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link" aria-label="link to history">History</a>
+                        <a href="#history-id" class="nav-link" aria-label="link to history">History</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link" aria-label="link to portfolio">Portfolio</a>
+                        <a href="#portfolio-id" class="nav-link" aria-label="link to portfolio">Portfolio</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link" aria-label="link to contacts">Contacts</a>
+                        <a href="#contacts-id" class="nav-link" aria-label="link to contacts">Contacts</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
+    <div class="mobile-navigation" aria-label="mobile navigation">
+       <label for="toggler-id" aria-label="open-close mobile-navigation menu">
+         <svg class="mobile-navigation-burger" aria-label="burger icon">
+            <use href="assets/sprites.svg#burger-icon"></use>
+         </svg>
+       </label>
+       <input type="checkbox" id="toggler-id" class="mobile-navigation-toggler">
+       <nav class="mobile-navigation-menu" aria-label="mobile">
+        <ul class="mobile-navigation-list" aria-label="mobile navigation list">
+            <li>
+                <a href="#home-id" class="mobile-navigation-link" aria-label="link to home">Home</a>
+            </li>
+            <li>
+                <a href="#about-id" class="mobile-navigation-link" aria-label="link to about">About</a>
+            </li>
+            <li>
+                <a href="#history-id" class="mobile-navigation-link" aria-label="link to history">History</a>
+            </li>
+            <li>
+                <a href="#portfolio-id" class="mobile-navigation-link" aria-label="link to portfolio">Portfolio</a>
+            </li>
+            <li>
+                <a href="#contacts-id" class="mobile-navigation-link" aria-label="link to contacts">Contacts</a>
+            </li>
+        </ul>
+        <label for="toggler-id" class="mobile-navigation-close" aria-label="open-close mobile-navigation menu">
+            <svg class="mobile-navigation-cross" aria-label="cross icon">
+               <use href="assets/sprites.svg#cross-icon"></use>
+            </svg>
+          </label>
+    </nav>
+    </div>
     <main aria-label="main">
-       <section class="home" aria-label=home section>
+       <section class="home" aria-label="home section" id="home-id">
           <div class="container">
             <h1 class= "home title" aria-label="title"> Leonardo da Vinci </h1>
-            <p class="home description">Leonardo di ser Piero da Vinci - Italian artist and scientist, inventor, writer, musician.</p>
+            <p class="home description">Leonardo di ser Piero da Vinci - Italian artist and scientist, inventor, writer, musician./Леонардо ди сер Пьеро да Винчи — итальянский художник и учёный, изобретатель, писатель, музыкант.</p>
             <img src="assets/web.p/image (3).webp" alt="photo portrait of Leonardo" class="home-img">
           </div>
        </section>
        <section class="about" aria-label="about-secton">
          <div class="container">
-            <h2 class="about-title" aria-label="about-title">about</h2>
+            <h2 class="about-title" aria-label="about-title" id="about-id">About</h2>
             <h3 class="about-suubtitle-ru" aria-label="about-suubtitle-ru">Леона́рдо ди сер Пье́ро да Ви́нчи — итальянский художник и учёный, изобретатель, писатель, музыкант</h3>
             <p class="about-description-ru" aria-label="about-description-ru">Леонардо [15 апреля 1452 г. – 2 мая 1519 г.] – автор гениальных произведений, таких как «Тайная вечеря», «Джоконда», «Мадонна в скалах» и других. О личности Леонардо уже более 5 веков слагают легенды, которые, переплетаясь с достоверными фактами биографии, создают удивительный образ гения.</p>
 
@@ -57,17 +89,52 @@
       </section>
       <section class="history" aria-label="history section">
          <div class="container">
-            <h2 class="history-title" aria-label="history title">History</h2>
+            <h2 class="history-title" aria-label="history title" id="history-id">History</h2>
             <img src="assets/web.p/imagehistory.webp" alt="Home Vinci" class="history-img">
-            <p class="history-description" aria-label="historydescription">В селении Анкиано среди оливковых рощ скрывается дом, где родился и до 14 лет жил Леонардо.   </p>
-                <p>In the village of Anchiano, among the olive groves, hides the house where Leonardo was born and lived until he was 14 years old.</p>
-         
-
+            <p class="history-description" aria-label="history description">В селении Анкиано среди оливковых рощ скрывается дом, где родился и до 14 лет жил Леонардо.   </p> 
+            <hr class="devider-history" aria-label="devider history">
+            <p class="history-description" aria-label="historydescription">In the village of Anchiano, among the olive groves, hides the house where Leonardo was born and lived until he was 14 years old.</p>
+         </div>
+      </section>
+      <section class="portfolio" aria-label="portfolio section">
+         <div class="container">
+          <h2 class="portfolio-title" aria-label="portfolio title" id="portfolio-id">Portfolio</h2>
+          <img src="assets/web.p/image (4).webp" alt="Mona Lisa" class="portfolio-img">
+          <p class="portfolio-description" aria-label="historydescription">Мона Лиза/Mona Lisa</p>
+          <img src="assets/web.p/image (5).webp" alt="Lady with ermine" class="portfolio-img">
+          <p class="portfolio-description" aria-label="historydescription">Дама с горностаем/Lady with ermine</p>
+          <img src="assets/web.p/image (6).webp" alt="last supper" class="portfolio-img">
+          <p class="portfolio-description" aria-label="historydescription">Тайная вечеря/Last supper</p>
          </div>
       </section>
     </main>
-    <footer>
-
+    <footer class="contacts " aria-label="contacts section" id="contacts-id">
+    <div class="container">
+        <h2 class="contacts-title" aria-label="contacts title">Contacts</h2>
+        <button class="contact-button">
+            <a href="https://leonardo.su/" class="button-link" target="_blank">leonardo.su</a>
+        </button>
+        <address class="socials" aria-label="socials icons">
+          <a href="https://linkedin.com/" target="_blank" aria-label="link to linkedin">
+            <svg class="socials icon" aria-label="linkedin icon">
+                <use href="assets/sprites.svg#linkedin-icon"></use>
+            </svg>
+          </a>
+          <a href="https://instagram.com/" target="_blank" aria-label="link to instagram">
+            <svg class="socials icon" aria-label="instagram icon">
+                <use href="assets/sprites.svg#instagram-icon"></use>
+            </svg>
+            <a href="https://facebook.com/" target="_blank" aria-label="link to facebook">
+                <svg class="socials icon" aria-label="facebook icon">
+                    <use href="assets/sprites.svg#facebook-icon"></use>
+                </svg>
+                <a href="https://youtube.com/" target="_blank" aria-label="link to youtube">
+                    <svg class="socials icon" aria-label="youtube icon">
+                        <use href="assets/sprites.svg#youtube-icon"></use>
+                    </svg>
+        </address>
+        <p class="contacts-info" aria-label="contacts info">More works you can see in these social networks/Больше работ вы можете увидеть в этих соцсетях</p>
+    </div>
     </footer>
 </body>
 </html>
